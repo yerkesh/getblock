@@ -1,0 +1,13 @@
+serviceName: getblock-svc
+version: 0.0.0
+
+server:
+  profile: dev
+  shutdownTimeout: 5
+  http:
+    port: :8095
+integration:
+  http:
+    block:
+      url: https://eth.getblock.io/mainnet
+      contentType: application/json
